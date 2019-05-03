@@ -17,6 +17,7 @@ class Atividade(models.Model):
     atividade = models.CharField(max_length=100)
     data_req_ini = models.DateTimeField('data inicial')
     data_req_fim = models.DateTimeField('data final')
+    solicitante = models.ForeignKey(Solicitante, on_delete=models.CASCADE)
 
 
 class Reserva(models.Model):
@@ -25,3 +26,4 @@ class Reserva(models.Model):
     obs = models.CharField(max_length=500)
     data_res_ini = models.DateTimeField('data inicial')
     data_res_fim = models.DateTimeField('data final')
+    atividade = models.ForeignKey(Atividade, on_delete=models.CASCADE)
