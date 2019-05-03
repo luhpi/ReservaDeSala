@@ -1,0 +1,13 @@
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+<form action  method="post">
+    {% csrf_token %} 
+    {{ user }}
+    <br>
+    <input type="submit" value="Entrar">
+</form>
+
+{{ result }}
+{% endblock %}
