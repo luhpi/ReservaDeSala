@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'apoio.apps.ApoioConfig',
     'reserva.apps.ReservaConfig',
     'login.apps.LoginConfig',
     'django.contrib.admin',

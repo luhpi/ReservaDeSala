@@ -10,7 +10,7 @@ from .models import User
 
 
 def login(request):
-    template = loader.get_template('login.html')
+    template = loader.get_template('login/login.html')
     if request.method == 'POST':
         user = UserForm(request.POST)
         context = {'user': user,
@@ -20,7 +20,10 @@ def login(request):
             try:
                 aux = User.objects.get(usuario=user.cleaned_data['usuario'])
                 if(aux.senha == user.cleaned_data['senha']):
-                    return redirect('/formulario/solicitante')
+                    if(aux.apoio is True):
+                        return redirect('/apoio')
+                    else:
+                        return redirect('/formulario/solicitante')
                 else:
                     result = "Senha incorreta"
                     context = {'user': user,

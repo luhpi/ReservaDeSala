@@ -18,12 +18,3 @@ class Atividade(models.Model):
     data_req_ini = models.DateTimeField('data inicial')
     data_req_fim = models.DateTimeField('data final')
     solicitante = models.ForeignKey(Solicitante, on_delete=models.CASCADE)
-
-
-class Reserva(models.Model):
-    sala = models.CharField(max_length=30)
-    servidor = models.CharField(max_length=100)
-    obs = models.CharField(max_length=500)
-    data_res_ini = models.DateTimeField('data inicial')
-    data_res_fim = models.DateTimeField('data final')
-    atividade = models.ForeignKey(Atividade, on_delete=models.CASCADE)
