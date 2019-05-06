@@ -1,21 +1,95 @@
 <!DOCTYPE html>
-
 <html>
   <head>
+    <meta charset = "utf-8"></meta>
     <title>UFCSPA - Reserva de salas</title>
   </head>
   <body>
-    <h1>Graduação</h1>
-    <h2>Pós-Graduação</h2>
-    <h2>Outro</h2>
-    <h2>Solicitante</h2>
-    <h2>Telefone para contato</h2>
-    <h2>Endereço eletrônico</h2>
-    <h1>Atividade curricular</h1>
-    <h2>Outra</h2>
-    <h2>Data</h2>
-    <h2>Horários de Reserva</h2>
-    <h2>Previsão de alunos</h2>
-    <h2>Outros equipamentos</h2>
+    <h1>Graduação:</h1>
+      <input type="radio" id="graduacao1" value="Biomedicina">
+      <input type="radio" id="graduacao2" value="Enfermagem">
+      <input type="radio" id="graduacao3" value="Fisioterapia">
+      <input type="radio" id="graduacao4" value="Fonoaudiologia">
+      <input type="radio" id="graduacao5" value="Medicina">
+      <input type="radio" id="graduacao6" value="Nutrição">
+      <input type="radio" id="graduacao7" value="Psicologia">
+    <h2>Pós-Graduação:</h2>
+      <input type="radio" id="pos_graduacao1" value="Especialização">
+      <input type="radio" id="pos_graduacao2" value="Residência Médica">
+      <input type="radio" id="pos_graduacao3" value="Pós-Graduacao (M ou D)">
+    <h2>Outro: Especificar</h2>
+      <input type="text" id="curso">
+    <h2>Solicitante:</h2>
+      <input type="text" id="nome_sol">
+    <h2>Telefone para contato:</h2>
+      <input type="tel" id="telefone" pattern="[0-9]({2})[0-9]{5}-[0-9{4}">
+    <h2>Endereço eletrônico:</h2>
+      <input type="email" id="email">
+    <h1>Atividade curricular (aula, seminário, etc.)</h1>
+      <input type="radio" id="ativ_aula" value="Aula">
+      <input type="radio" id="ativ_seminario" value="Seminário">
+      <input type="radio" id="ativ_prova" value="Prova">
+      <br>
+      <p1>1) não serão agendadas provas e aulas fora do horário fornecido pela secretaria;</p1>
+      <br>
+      <p1>2) terão prioridade as atividades curriculares no agendamento de reserva especial de salas</p1>
+      <br>
+      <input type="radio" id="ativ_outra" value="Outra">
+      <label for="ativ_especificar">Especificar</label>
+      <input type="text" id="ativ_especificar">
+    <h2>Data:</h2>
+      <input type="date" id="data_req">
+      <p1>Ou</p1>
+      <label for="periodo_req_inicio">Período (início e término):</label>
+      <input type="date" id="periodo_req_inicio">
+      <p1>a</p1>
+      <input type="date" id="periodo_req_termino">
+    <h2>Horários de Reserva:</h2>
+      <!--Adicionar input-->
+      <table>
+        <tr>
+          <th></th>
+          <th>2ª feira</th>
+          <th>3ª feira</th>
+          <th>4ª feira</th>
+          <th>5ª feira</th>
+          <th>6ª feira</th>
+          <th>Sábado</th>
+        </tr>
+          <td>7 às 8</td>
+          <td>8 às 9</td>
+          <td>9 às 8</td>
+          <td>10 às 11</td>
+          <td>11 às 12</td>
+          <td>12 às 13</td>
+          <td>13 às 14</td>
+          <td>14 às 15</td>
+          <td>15 às 16</td>
+          <td>16 às 17</td>
+          <td>17 às 18</td>
+          <td>18 às 19</td>
+          <td>19 às 20</td>
+          <td>20 às 21</td>
+          <td>21 às 22</td>
+          <td>22 às 23</td>
+      </table>
+    <h2>Previsão de alunos:</h2>
+      <label for="previsao_alunos">Previsão de alunos: (</label>
+      <input type="text" id="previsao_alunos">
+      <p1>) ESPECIFICAR Nº DE ALUNOS</p1>
+    <h2>Outros equipamentos:</h2>
+      <p1>Obs.: Todas as salas possuem computador e equipamento multimídia. Outros equipamentos devem ser
+solicitados com antecedência mínima de 24 horas ao Setor de Apoio às Salas de Aula. Reserva para
+eventos deverão ser realizadas no protocolo, com no mínimo 45 dias de antecedência, conforme normas
+institucionais.</p1>
+      <br>
+      <p1>Outros equipamentos</p1>
+      <input type="radio" id="equip_projetor" value="Projetor de slides">
+      <input type="radio" id="equip_retroprojetor" value="Retroprojetor">
+      <input type="radio" id="equip_audio" value="Equipamento de áudio">
+      <input type="radio" id="equip_dvd" value="DVD">
+      <input type="radio" id="equip_outro" value="Outro">
+      <label for="equip_especificar">Especificar:</label>
+      <input type="text" id="equip_especificar">
   </body>
 </html>
