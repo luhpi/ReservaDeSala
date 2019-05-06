@@ -6,17 +6,21 @@
   </head>
   <body>
     <h1>Graduação:</h1>
-      <input type="radio" id="graduacao1" value="Biomedicina">
-      <input type="radio" id="graduacao2" value="Enfermagem">
-      <input type="radio" id="graduacao3" value="Fisioterapia">
-      <input type="radio" id="graduacao4" value="Fonoaudiologia">
-      <input type="radio" id="graduacao5" value="Medicina">
-      <input type="radio" id="graduacao6" value="Nutrição">
-      <input type="radio" id="graduacao7" value="Psicologia">
+      <form>
+        <input type="radio" id="graduacao1" value="Biomedicina">Biomedicina
+        <input type="radio" id="graduacao2" value="Enfermagem">Enfermagem
+        <input type="radio" id="graduacao3" value="Fisioterapia">Fisioterapia
+        <input type="radio" id="graduacao4" value="Fonoaudiologia">Fonoaudiologia
+        <input type="radio" id="graduacao5" value="Medicina">Medicina
+        <input type="radio" id="graduacao6" value="Nutrição">Nutrição
+        <input type="radio" id="graduacao7" value="Psicologia">Psicologia
+      </form>
     <h2>Pós-Graduação:</h2>
-      <input type="radio" id="pos_graduacao1" value="Especialização">
-      <input type="radio" id="pos_graduacao2" value="Residência Médica">
-      <input type="radio" id="pos_graduacao3" value="Pós-Graduacao (M ou D)">
+      <form>
+        <input type="radio" id="pos_graduacao1" value="Especialização">Especialização
+        <input type="radio" id="pos_graduacao2" value="Residência Médica">Residência Médica
+        <input type="radio" id="pos_graduacao3" value="Pós-Graduação (M ou D)">Pós-Graduação (M ou D)
+      </form>
     <h2>Outro: Especificar</h2>
       <input type="text" id="curso">
     <h2>Solicitante:</h2>
@@ -26,17 +30,19 @@
     <h2>Endereço eletrônico:</h2>
       <input type="email" id="email">
     <h1>Atividade curricular (aula, seminário, etc.)</h1>
-      <input type="radio" id="ativ_aula" value="Aula">
-      <input type="radio" id="ativ_seminario" value="Seminário">
-      <input type="radio" id="ativ_prova" value="Prova">
-      <br>
-      <p1>1) não serão agendadas provas e aulas fora do horário fornecido pela secretaria;</p1>
-      <br>
-      <p1>2) terão prioridade as atividades curriculares no agendamento de reserva especial de salas</p1>
-      <br>
-      <input type="radio" id="ativ_outra" value="Outra">
-      <label for="ativ_especificar">Especificar</label>
-      <input type="text" id="ativ_especificar">
+      <form>
+        <input type="radio" id="ativ_aula" value="Aula">Aula
+        <input type="radio" id="ativ_seminario" value="Seminário">Seminário
+        <input type="radio" id="ativ_prova" value="Prova">Prova
+        <br>
+        <p1>1) não serão agendadas provas e aulas fora do horário fornecido pela secretaria;</p1>
+        <br>
+        <p1>2) terão prioridade as atividades curriculares no agendamento de reserva especial de salas</p1>
+        <br>
+        <input type="radio" id="ativ_outra" value="Outra">Outra.
+        <label for="ativ_especificar">Especificar</label>
+        <input type="text" id="ativ_especificar">
+      </form>
     <h2>Data:</h2>
       <input type="date" id="data_req">
       <p1>Ou</p1>
@@ -75,7 +81,7 @@
       </table>
     <h2>Previsão de alunos:</h2>
       <label for="previsao_alunos">Previsão de alunos: (</label>
-      <input type="text" id="previsao_alunos">
+      <input type="number" id="previsao_alunos">
       <p1>) ESPECIFICAR Nº DE ALUNOS</p1>
     <h2>Outros equipamentos:</h2>
       <p1>Obs.: Todas as salas possuem computador e equipamento multimídia. Outros equipamentos devem ser
@@ -84,12 +90,14 @@ eventos deverão ser realizadas no protocolo, com no mínimo 45 dias de anteced�
 institucionais.</p1>
       <br>
       <p1>Outros equipamentos</p1>
-      <input type="radio" id="equip_projetor" value="Projetor de slides">
-      <input type="radio" id="equip_retroprojetor" value="Retroprojetor">
-      <input type="radio" id="equip_audio" value="Equipamento de áudio">
-      <input type="radio" id="equip_dvd" value="DVD">
-      <input type="radio" id="equip_outro" value="Outro">
-      <label for="equip_especificar">Especificar:</label>
-      <input type="text" id="equip_especificar">
+      <form>
+        <input type="radio" id="equip_projetor" value="Projetor de slides">Projetor de slides
+        <input type="radio" id="equip_retroprojetor" value="Retroprojetor">Retroprojetor
+        <input type="radio" id="equip_audio" value="Equipamento de áudio">Equipamento de áudio
+        <input type="radio" id="equip_dvd" value="DVD">DVD
+        <input type="radio" id="equip_outro" value="Outro">Outro.
+        <label for="equip_especificar">Especificar:</label>
+        <input type="text" id="equip_especificar">
+      </form>
   </body>
 </html>
